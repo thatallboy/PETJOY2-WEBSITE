@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetJoy Super Store - Fresh Groceries Delivered</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">PetJoy store</div>
+        <nav class="nav-menu" id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-right">
+            <div class="cart-icon">🛒 Cart (0)</div>
+            <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu" title="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <span class="menu-label" id="menu-label">Menu</span>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Fresh Groceries Delivered to Your Doorstep</h1>
+        <p>Quality food at affordable prices, delivered fast and fresh</p>
+        <a href="shop.html" class="btn btn-primary">Shop Now</a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-card">
+            <div class="feature-icon">🚚</div>
+            <h3>Fast Delivery</h3>
+            <p>Same-day delivery available for orders placed before 12 PM</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">✅</div>
+            <h3>Quality Guarantee</h3>
+            <p>All products are fresh and sourced from trusted suppliers</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">💰</div>
+            <h3>Best Prices</h3>
+            <p>Competitive pricing with regular discounts and offers</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Secure Shopping</h3>
+            <p>Safe and encrypted transactions for peace of mind</p>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">🥕</div>
+                <h4>Fresh Vegetables</h4>
+                <p class="price">From ₦2,990</p>
+                <p class="description">Organic and farm-fresh vegetables</p>
+                <a href="shop.html?category=vegetables" class="btn btn-small">View</a>
+            </div>
+            <div class="product-card">
+                <div class="product-image">🥛</div>
+                <h4>Dairy Products</h4>
+                <p class="price">From ₦4,190</p>
+                <p class="description">Fresh milk, cheese, and yogurt</p>
+                <a href="shop.html?category=dairy" class="btn btn-small">View</a>
+            </div>
+            <div class="product-card">
+                <div class="product-image">🍗</div>
+                <h4>Meat & Fish</h4>
+                <p class="price">From ₦9,590</p>
+                <p class="description">Premium quality meat and fresh fish</p>
+                <a href="shop.html?category=meat" class="btn btn-small">View</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Section -->
+    <section class="promo">
+        <div class="promo-content">
+            <h2>Special Offer</h2>
+            <p>Get 20% off on your first order</p>
+            <p class="promo-code">Use code: <strong>PETJOY20</strong></p>
+            <a href="shop.html" class="btn btn-secondary">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+            <a href="shop.html?category=vegetables" class="category-card">
+                <span class="category-icon">🥬</span>
+                <h4>Vegetables</h4>
+            </a>
+
+            <a href="shop.html?category=pantry" class="category-card">
+                <span class="category-icon">🛏️</span>
+                <h4>Pantry Staples</h4>
+            </a>
+            <a href="shop.html?category=bakery" class="category-card">
+                <span class="category-icon">🍞</span>
+                <h4>Bakery</h4>
+            </a>
+            <a href="shop.html?category=snacks" class="category-card">
+                <span class="category-icon">🍫</span>
+                <h4>Snacks</h4>
+            </a>
+            <a href="shop.html?category=beverages" class="category-card">
+                <span class="category-icon">☕</span>
+                <h4>Beverages</h4>
+            </a>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Get exclusive deals and updates delivered to your inbox</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About PetJoy Super Store</h4>
+                <p>Your trusted online grocery store for quality food products delivered fresh.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>Email: info@petjoysuperstore.com</p>
+                <p>Phone: +234 701 706 8303 | +234 803 743 3996</p>
+                <p>Hours: Mon-Sat, 9AM-9PM</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <p>
+                    <a href="#">Facebook</a> | 
+                    <a href="#">Twitter</a> | 
+                    <a href="#">Instagram</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 PetJoy Super Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
