@@ -18,6 +18,8 @@ function toggleFilters() {
     if (overlay) {
         overlay.classList.toggle('active');
     }
+
+    // --- Reviews: keep existing filters unaffected ---
 }
 
 // Highlight Active Navigation Link
@@ -191,6 +193,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Cart count can be updated on any page
     updateCartCount();
 });
+
+// Note: homepage seeding removed — reviews are maintained statically on About page
 
 // Render Products
 function renderProducts(productsToRender) {

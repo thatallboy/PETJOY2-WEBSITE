@@ -96,6 +96,45 @@
             <div id="no-results" class="no-results" style="display:none;">
                 <p>No products found matching your filters. Try adjusting your search.</p>
             </div>
+
+            <!-- Reviews Section -->
+            <section class="reviews" id="reviews-section">
+                <h2>Customer Reviews & Ratings</h2>
+
+                <div class="reviews-summary">
+                    <div class="average-rating" id="average-rating">0.0<span>/5</span></div>
+                    <div class="average-stars" id="average-stars" aria-hidden="true"></div>
+                    <div class="reviews-count" id="reviews-count">(0 reviews)</div>
+                </div>
+
+                <div class="review-form-wrapper">
+                    <form id="review-form" class="review-form">
+                        <div class="form-row">
+                            <input type="text" id="review-name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-row star-input-row" aria-label="Rating">
+                            <div class="star-input" id="star-input">
+                                <span class="star" data-value="1">☆</span>
+                                <span class="star" data-value="2">☆</span>
+                                <span class="star" data-value="3">☆</span>
+                                <span class="star" data-value="4">☆</span>
+                                <span class="star" data-value="5">☆</span>
+                            </div>
+                            <input type="hidden" id="review-rating" value="5">
+                        </div>
+                        <div class="form-row">
+                            <textarea id="review-comment" placeholder="Write your review..." rows="3" required></textarea>
+                        </div>
+                        <div class="form-row">
+                            <button type="submit" class="btn btn-primary">Submit Review</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="review-list" id="review-list">
+                    <!-- Reviews will be inserted here -->
+                </div>
+            </section>
         </main>
     </div>
 
